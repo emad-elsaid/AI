@@ -40,3 +40,9 @@ docker run -it -v /home/emad/AI:/model vicuna /ai/merge-vicuna
 ```
 docker run -it -v /home/emad/AI:/model vicuna /ai/vicuna-cpu
 ```
+
+## Run vicuna on GPU
+
+```
+docker run -it --gpus all -v /home/emad/AI:/model vicuna /ai/vicuna-gpu
+```

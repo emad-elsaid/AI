@@ -18,3 +18,9 @@ RUN chmod +x /ai/merge-vicuna
 # vicuna commands
 RUN echo "#!/usr/bin/env bash\npython3 -m fastchat.serve.cli --model-name /model/vicuna-13b --device cpu" > /ai/vicuna-cpu
 RUN chmod +x /ai/vicuna-cpu
+
+RUN echo "#!/usr/bin/env bash\npython3 -m fastchat.serve.cli --model-name /model/vicuna-13b" > /ai/vicuna-gpu
+RUN chmod +x /ai/vicuna-gpu
+
+
+CMD /ai/vicuna-cpu
