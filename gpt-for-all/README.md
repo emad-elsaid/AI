@@ -17,6 +17,8 @@ docker build . -t gpt4all
 
 ## run it
 
+make sure to replace the path `/home/emad/AI/...` with the path to the model file (not the directory, the file itself)
+
 ```
-docker run -it -v /home/emad/AI/gpt4all/gpt4all-lora-quantized.bin:/gpt4all/chat/model gpt4all
+docker run -it -v /home/emad/AI/gpt4all/gpt4all-lora-quantized.bin:/model gpt4all
 ```

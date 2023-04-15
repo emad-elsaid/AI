@@ -8,4 +8,4 @@ RUN git clone https://github.com/nomic-ai/gpt4all.git
 
 WORKDIR /gpt4all/chat
 
-CMD ./gpt4all-lora-quantized-linux-x86 -m model
+CMD ./gpt4all-lora-quantized-linux-x86 -m /model
