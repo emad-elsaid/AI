@@ -17,5 +17,5 @@ docker run -it -v /home/emad/AI:/models llama.cpp ./convert
 ## Run it
 
 ```
-docker run -it -v  /home/emad/AI:/models llama.cpp ./convert
+docker run -it -v  /home/emad/AI:/models llama.cpp
 ```
